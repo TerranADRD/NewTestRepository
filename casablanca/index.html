@@ -2,8 +2,7 @@
 <html lang="EN">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
  
   <title>Главная страница</title>
 </head>
@@ -18,22 +17,22 @@
     <span class="hamburger block5"></span>
    </a>
    <h1 class="caption-header-text">WE'VE GOT A TALENTS</h1>
-   <p class="text  caption-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+   <p class="caption-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
    Aenean commodo ligula eget dolor. Aenean massa.</p>
    <img src="icons/Mouse_scroll_ic.png" class="Mouse-scroll-icon" alt="Mouse-scroll">
   </div>
   </header>
 <main>
   <div class="block  introduction-block">
-    <h2 class="caption  introduction-caption"><Introduction/h2>
+    <h2 class="caption  introduction-caption">Introduction</h2>
       <p class="text  introduction-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-  </div>f
+  </div>
   <div class="block creativity-block">
    <a href="#" "button  button__white  creativity-button">Pure Creativity.</a>
   </div>
   <div class="block  our-works-block">
-    <h2 class="caption our-works-caption">SOME OF OUR WORKS</h2>
+    <h2 class="caption  our-works-caption">SOME OF OUR WORKS</h2>
     <ul class="our-works-menu">
      <li><a class="works-menu-item" href="#">ALL</a></li>
      <li><a class="works-menu-item" href="#">BRANDING</a></li>
@@ -68,11 +67,11 @@
     <p class="text  about-us-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
         <div class="about-us-photos-block">
-            <img src="img/block7img1.png" width="270" height="358" alt="john ceo/founder">
+            <p><img src="img/block7img1.png" width="270" height="358" alt="john ceo/founder">john ceo/founder</p>
             <img src="img/block7img2.png" width="270" height="358" alt="someone something">
             <img src="img/block7img3.png" width="270" height="358" alt="someone something">
-            <div class=" empty-photo-block">
-              <h3 class="caption about-us-caption">WE ARE HIRING</h3>
+            <div class=" empty-photo-block" >
+              <h3 class="about-us-caption">WE ARE HIRING</h3>
               <a class="button apply_button" href="#">Apply</a>
             </div>
         </div>
@@ -89,24 +88,24 @@
             <img src="img/iPhone_5cblock9.png" class="iphone" alt="iphone 5c">
             <p class="advantage-caption">App design</p>
             <p class="advantage-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolor.</p>
+                incididunt ut labore et dolore.</p>
           </div>
           <div class="advantage">
               <img src="img/iPad_Air_block9.png" class="ipad" alt="ipad-AIR">
               <p class="advantage-caption">Responsive Layout</p>
               <p class="advantage-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-                  incididunt ut labore et dolor.</p>
+                  incididunt ut labore et dolore.</p>
             </div>
             <div class="advantage">
                 <img src="img/Macbook_Problock9.png" class="MacBook" alt="MacBook Pro">           
                 <p class="advantage-caption">Pixel Perfect Design</p>
                 <p class="advantage-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolor.</p>
+                    incididunt ut labore et dolore.</p>
               </div>
         </div>
         <div class="radio-switcher">
         <label for="slider" class="slider-label">
-          <input type="radio" class="slider">
+          <input type="radio" class="slider" checked>
           <input type="radio" class="slider">
         </label>
         </div>
@@ -117,12 +116,12 @@
   <div  class="block  touch-block">
     <h2 class="caption  touch-caption">GET IN TOUCH</h2>
     <p class="text  touch-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-      incididunt ut labore et dolor.</p>
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
   </div>
   <div class="block  location-and-feedback-block">
    <div class="location-block">
-    <h3>Our Location</h3>
-    <p class="text  location-text">174 Mimosa ST. NW
+    <h3 class="location-caption">Our Location</h3>
+    <p class="location-text">174 Mimosa ST. NW
       Casablanca, MA 20370
       (212) 123 456 7
       Samir Timezguida</p>
@@ -136,9 +135,12 @@
    </div>
    <div class="feedback-block">
     <form name="feedback-form" class="feedback-form" method="post">
-     <input type="text" value="Name" name="user-name">
-     <input type="email" value="Email" name="user-email">
-     <input type="text" value="Message" name="user-message">
+     <input type="text" value="Name" id="user-name">
+     <label for="user-name" class="feedback-label"></label>
+     <input type="email" value="Email" id="user-email">
+     <label for="user-email" class="feedback-label"></label>
+     <input type="text" value="Message" id="user-message">
+     <label for="user-message" class="feedback-label"></label>
       <a href="#" class="button apply_button">Send</a>
     </form>
    </div>
@@ -147,7 +149,7 @@
 
   <footer class="footer-main">
    <img src="img/Logo_footer.png" class="footer-logo">
-   <p>2014 © <a href="#" class="designer-name">Samir Timezguida.</a>  All Rights Reserved.</p>
+   <p class="footer-copyright">2014 © <a href="#" class="designer-name">Samir Timezguida.</a>  All Rights Reserved.</p>
   </footer>
 </body>
 </html>
