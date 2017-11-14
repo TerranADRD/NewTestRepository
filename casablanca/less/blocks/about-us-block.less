@@ -1,0 +1,134 @@
+.about-us-block{
+    .whitebg;
+    
+}
+@media(max-width:700px){
+    .about-us-photos-block{
+        flex-wrap: wrap;
+        .about-us-photos-block img{
+        
+            width:90%;
+            
+                    
+        }
+        
+    }
+}
+//mixins locale
+.aboutusbefore{
+    position: absolute;
+    top:275px;
+    left: 130px;
+    color:white;
+    font-family: "Big John";
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+
+}
+
+.aboutUsAfter{
+    position: absolute;
+    top:311px;
+    left: 113px;
+    color:white;
+    font-family: "Amble Bold";
+    font-size: 18px;
+    line-height: 36px;
+
+}
+.aboutUsAfterHover{
+    content:  url(../icons/circullarbutton.png);
+    position: absolute;
+    top:16px;
+    left: 252px;
+     
+}
+//mixins locale
+//fonts
+.about-us-caption,.about-us-caption-small-block{
+    font-family: "Big John";
+    font-size:24px;
+    line-height: 36px;
+   } 
+.about-us-text{
+    margin-top:120px;
+}
+//fonts
+.empty-photo-block{
+    text-align:center;
+ }
+ .about-us-caption-small-block{
+     position: relative;
+   padding-top:76px; 
+ }
+
+ .about-us-caption-small-block::after{
+    position: absolute;
+    content: "";
+    margin-left: 93px;
+    margin-right: auto;
+    top:0px;
+    left:0px;
+    height:2px;
+    min-width:85px;
+    color:black;
+    background-color: black;
+    margin-top:180px;
+ }
+
+.about-us-photos-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 80px;
+    
+}
+.john,
+.nameless-bitch-1,
+.nameless-bitch-2  {
+
+    position: relative;
+}
+
+.john:hover::after,
+.nameless-bitch-1:hover::after,
+.nameless-bitch-2:hover::after{
+    .aboutUsAfterHover;    
+}
+
+
+.john::before{
+    content: 'JOHN ' ;
+    .aboutusbefore;
+}
+.nameless-bitch-1::before{
+    content: 'Subject1 ' ;
+    .aboutusbefore;
+}
+.nameless-bitch-2::before{
+    content: 'Subject2 ' ;
+    .aboutusbefore;
+}
+
+
+.john::after,
+.nameless-bitch-1::after,
+.nameless-bitch-2::after{
+    content: 'CEO/founder' ;
+    .aboutUsAfter; 
+}
+
+.about-us-photos-block img{
+    
+    margin-left:30px;
+    &:hover{
+      border:4px solid black;
+    }
+}
+.empty-photo-block{
+    text-align: center;
+    margin-left:30px;
+    width:270px;
+    height:358px;
+}

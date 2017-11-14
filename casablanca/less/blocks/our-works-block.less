@@ -1,0 +1,91 @@
+.our-works-block{
+    .whitebg;
+    
+}
+
+.our-works-menu{
+    .noliststyle;
+    }
+       .works-menu-item{
+        .wrkmenuitemfont;
+    }
+.wrkmenuitemfont{
+        
+        font-family: "Slim Joe";
+        font-size:18px;
+        line-height: 36px;
+        text-decoration: none;
+        color:#3f3f3f;
+        &:hover{
+            font-family: "Big John"; 
+        }
+        &:active{
+            font-family: "Big John"; 
+        }
+    }
+
+.our-works-menu {
+    display: flex;
+    flex-direction:row; 
+    justify-content: center;
+    margin-top:100px;
+ 
+ }
+ .our-works-menu li{
+ 
+     margin-left:33px;
+     margin-bottom: 85px;
+ }
+ @media (max-width:800px){
+    .button__white{
+        font-size:20px;
+    }
+    .button__black{
+        font-size:12px;
+    }
+     .photo-block-1 , .photo-block-2{
+         flex-wrap: wrap;
+     .photo-item{
+         width:80%;
+         height: 420px;
+         
+     }
+ }
+ }
+ 
+ @media (max-width:400px){
+     .button__black{
+         font-size:10px;
+     }
+     .button__white{
+         font-size:15px;
+     }
+     .photo-block-1 , .photo-block-2{
+         flex-wrap: wrap;
+     .photo-item{
+         width:90%;
+         height:420px;
+         
+     }
+ }
+ }
+ 
+ .photo-block-1{
+     display: flex;
+     flex-direction:row; 
+     justify-content: center;
+     
+ }
+ .photo-block-2{
+     display: flex;
+     flex-direction:row; 
+     justify-content: center;
+     
+ }
+ .photo-item{
+ 
+     width:370px;
+     height: 420px;
+     margin-left: 30px;
+     margin-bottom: 20px;
+ }

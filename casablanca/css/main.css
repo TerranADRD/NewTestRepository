@@ -1,0 +1,717 @@
+.whitebg {
+  background-color: #ffffff;
+}
+.content-align {
+  text-align: center;
+}
+.noliststyle {
+  list-style: none;
+}
+.aboutUsParentPosition {
+  position: relative ;
+}
+body {
+  min-width: 600px;
+  margin: 0px;
+  padding: 0px;
+}
+.hamburger-menu {
+  padding-left: 20px;
+  padding-top: 20px;
+  display: block;
+  width: 35px;
+  height: 30px;
+  color: transparent;
+  background-color: transparent;
+  background-image: url('../icons/menu_ic.png');
+}
+.hamburger-menu .hamburger {
+  display: none;
+  color: black;
+  padding: 15px;
+  border: 1px solid black;
+  min-width: 180px;
+  height: 20px;
+  background-color: lightgray;
+  opacity: 0.8;
+  text-transform: uppercase;
+  font-family: "Big John";
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+.hamburger-menu .hamburger:hover {
+  color: white;
+  background: lightgray;
+  opacity: 1;
+}
+.hamburger-menu:hover .hamburger {
+  display: block;
+  transform: translateY(25px);
+  width: 200px;
+}
+.header-top {
+  background-image: url('../img/headerbckgrimg.png');
+  background-size: cover;
+  text-align: center;
+}
+.caption-header-text {
+  font-family: "Big John";
+  font-size: 48px;
+  line-height: 60px;
+  color: #ffffff;
+  position: relative;
+  margin-top: 260px;
+}
+.caption-header-text::after {
+  position: absolute;
+  content: "";
+  margin-left: 47%;
+  margin-right: auto;
+  top: 0px;
+  left: 0px;
+  height: 2px;
+  min-width: 85px;
+  color: white;
+  background-color: white;
+  margin-top: 110px;
+}
+.caption-text {
+  font-family: "Amble Regular";
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 90px;
+  margin-bottom: 344px;
+}
+.footer-main {
+  background-color: #222222;
+  clear: both;
+  text-align: center;
+}
+.footer-logo {
+  margin-top: 100px;
+}
+.footer-copyright {
+  margin-top: 65px;
+  padding-bottom: 195px;
+}
+.footer-copyright {
+  font-family: "Amble Regular";
+  font-size: 16px;
+  line-height: 40px;
+  color: #ffffff;
+}
+.designer-name {
+  font-family: "Amble Bold";
+  font-size: 16px;
+  line-height: 40px;
+  color: #d87843;
+}
+.about-us-block {
+  background-color: #ffffff;
+}
+@media (max-width: 700px) {
+  .about-us-photos-block {
+    flex-wrap: wrap;
+  }
+  .about-us-photos-block .about-us-photos-block img {
+    width: 90%;
+  }
+}
+.aboutusbefore {
+  position: absolute;
+  top: 275px;
+  left: 130px;
+  color: white;
+  font-family: "Big John";
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+}
+.aboutUsAfter {
+  position: absolute;
+  top: 311px;
+  left: 113px;
+  color: white;
+  font-family: "Amble Bold";
+  font-size: 18px;
+  line-height: 36px;
+}
+.aboutUsAfterHover {
+  content: url(../icons/circullarbutton.png);
+  position: absolute;
+  top: 16px;
+  left: 252px;
+}
+.about-us-caption,
+.about-us-caption-small-block {
+  font-family: "Big John";
+  font-size: 24px;
+  line-height: 36px;
+}
+.about-us-text {
+  margin-top: 120px;
+}
+.empty-photo-block {
+  text-align: center;
+}
+.about-us-caption-small-block {
+  position: relative;
+  padding-top: 76px;
+}
+.about-us-caption-small-block::after {
+  position: absolute;
+  content: "";
+  margin-left: 93px;
+  margin-right: auto;
+  top: 0px;
+  left: 0px;
+  height: 2px;
+  min-width: 85px;
+  color: black;
+  background-color: black;
+  margin-top: 180px;
+}
+.about-us-photos-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+.john,
+.nameless-bitch-1,
+.nameless-bitch-2 {
+  position: relative;
+}
+.john:hover::after,
+.nameless-bitch-1:hover::after,
+.nameless-bitch-2:hover::after {
+  content: url(../icons/circullarbutton.png);
+  position: absolute;
+  top: 16px;
+  left: 252px;
+}
+.john::before {
+  content: 'JOHN ';
+  position: absolute;
+  top: 275px;
+  left: 130px;
+  color: white;
+  font-family: "Big John";
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+}
+.nameless-bitch-1::before {
+  content: 'Subject1 ';
+  position: absolute;
+  top: 275px;
+  left: 130px;
+  color: white;
+  font-family: "Big John";
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+}
+.nameless-bitch-2::before {
+  content: 'Subject2 ';
+  position: absolute;
+  top: 275px;
+  left: 130px;
+  color: white;
+  font-family: "Big John";
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+}
+.john::after,
+.nameless-bitch-1::after,
+.nameless-bitch-2::after {
+  content: 'CEO/founder';
+  position: absolute;
+  top: 311px;
+  left: 113px;
+  color: white;
+  font-family: "Amble Bold";
+  font-size: 18px;
+  line-height: 36px;
+}
+.about-us-photos-block img {
+  margin-left: 30px;
+}
+.about-us-photos-block img:hover {
+  border: 4px solid black;
+}
+.empty-photo-block {
+  text-align: center;
+  margin-left: 30px;
+  width: 270px;
+  height: 358px;
+}
+.choose-block {
+  background-color: #ffffff;
+}
+.advantage-caption {
+  font-family: "Amble Regular";
+  font-size: 24px;
+  line-height: 24px;
+}
+.advantage-text {
+  font-family: "Amble Regular";
+  font-size: 16px;
+  line-height: 30px;
+}
+.choose-block-text {
+  margin-bottom: 100px;
+}
+.advantages-container {
+  text-align: center;
+  margin-bottom: 55px;
+}
+.advantage {
+  line-height: 335px;
+  width: 370px;
+  margin-right: 10px;
+  display: inline-block;
+}
+.advantage-caption {
+  margin-top: -120px;
+}
+.radio-switcher {
+  text-align: center;
+  margin-bottom: 55px;
+}
+#slider1,
+#slider2 {
+  visibility: hidden;
+}
+.labelradio {
+  position: relative;
+}
+.labelradio::before {
+  content: '';
+  position: absolute;
+  border: 7px solid orange;
+  border-radius: 50%;
+  top: 0;
+  left: 20px;
+  margin-left: -15px;
+}
+.labelradio:hover::before {
+  border-color: lightgray;
+}
+.creativity-block {
+  background-image: url(../img/section3bckrimg.png);
+  min-height: 500px;
+  background-size: cover;
+  text-align: center;
+  position: relative ;
+}
+.help-block {
+  background-image: url(../img/block5bckrimg.png);
+  min-height: 500px;
+  background-size: cover;
+  text-align: center;
+  position: relative ;
+}
+.introduction-block {
+  background-color: #ffffff;
+}
+.location-caption {
+  font-family: "Big John";
+  font-size: 24px;
+  line-height: 60px;
+}
+.location-text {
+  font-family: "Amble Light";
+  font-size: 22px;
+  line-height: 40px;
+  font-style: italic;
+}
+.feedback-form input[type="text"],
+input[type="email"] {
+  font-family: "Amble Regular";
+  font-style: italic;
+  font-size: 18px;
+  line-height: 40px;
+}
+.social-icons {
+  margin-bottom: 40px;
+}
+.location-and-feedback-block .location-block {
+  float: left;
+  background-color: #f2f2f2;
+  text-align: center;
+  width: 31.5%;
+  background-size: cover;
+}
+.location-and-feedback-block .feedback-block {
+  background-color: #e4e4e4;
+  background-size: cover;
+  float: right;
+  width: 68.5%;
+  position: relative;
+}
+.location-wrapper {
+  margin-top: 100px;
+}
+.feedback-block .feedback-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+}
+.feedback-form .user-name {
+  color: #afafaf;
+  margin-top: 100px;
+  width: 300px;
+  background-color: #e4e4e4;
+  border: none;
+  border-bottom: 1px solid #afafaf;
+  margin-right: 35px;
+}
+.feedback-form .user-email {
+  color: #afafaf;
+  margin-left: 35px;
+  margin-top: 100px;
+  width: 300px;
+  background-color: #e4e4e4;
+  border: none;
+  border-bottom: 1px solid #afafaf;
+}
+.feedback-form .user-message {
+  color: #afafaf;
+  width: 670px;
+  margin-top: 100px;
+  background-color: #e4e4e4;
+  border: none;
+  border-bottom: 1px solid #afafaf;
+  margin-bottom: 160px;
+}
+.socIcon {
+  background-image: url('../icons/socials-sprite.png');
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  color: transparent;
+}
+.twitter {
+  background-position: -84px 42px;
+}
+.facebook {
+  background-position: 0px 42px;
+}
+.instagram {
+  background-position: -36px 42px;
+}
+.ve {
+  background-position: 85px 45px;
+}
+.be {
+  background-position: 40px 48px;
+}
+@media (max-width: 1220px) {
+  .clients-logos {
+    flex-wrap: wrap;
+  }
+}
+.clientlogobgr {
+  background-repeat: no-repeat;
+  width: 140px;
+  height: 50px;
+  background-image: url('../img/companys-sprite.png');
+}
+.our-clients-block {
+  background-size: cover;
+  min-height: 500px;
+  background-color: #f4f4f4;
+}
+.caption-wrapper {
+  padding-top: 114px;
+}
+.our-clients-block .caption {
+  margin-top: 0px;
+}
+.clients-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 156px;
+}
+.client_logo {
+  margin-right: 60px;
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 55px;
+  background-image: url('../img/companys-sprite.png');
+}
+.google {
+  background-position: -361px -20px;
+}
+.samsung {
+  background-position: -178px -20px;
+}
+.flickr {
+  background-position: -5px -20px;
+}
+.foursquare {
+  background-position: -543px -20px;
+}
+.pinterest {
+  background-position: -757px -20px;
+}
+.our-works-block {
+  background-color: #ffffff;
+}
+.our-works-menu {
+  list-style: none;
+}
+.works-menu-item {
+  font-family: "Slim Joe";
+  font-size: 18px;
+  line-height: 36px;
+  text-decoration: none;
+  color: #3f3f3f;
+}
+.works-menu-item:hover {
+  font-family: "Big John";
+}
+.works-menu-item:active {
+  font-family: "Big John";
+}
+.wrkmenuitemfont {
+  font-family: "Slim Joe";
+  font-size: 18px;
+  line-height: 36px;
+  text-decoration: none;
+  color: #3f3f3f;
+}
+.wrkmenuitemfont:hover {
+  font-family: "Big John";
+}
+.wrkmenuitemfont:active {
+  font-family: "Big John";
+}
+.our-works-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 100px;
+}
+.our-works-menu li {
+  margin-left: 33px;
+  margin-bottom: 85px;
+}
+@media (max-width: 800px) {
+  .button__white {
+    font-size: 20px;
+  }
+  .button__black {
+    font-size: 12px;
+  }
+  .photo-block-1,
+  .photo-block-2 {
+    flex-wrap: wrap;
+  }
+  .photo-block-1 .photo-item,
+  .photo-block-2 .photo-item {
+    width: 80%;
+    height: 420px;
+  }
+}
+@media (max-width: 400px) {
+  .button__black {
+    font-size: 10px;
+  }
+  .button__white {
+    font-size: 15px;
+  }
+  .photo-block-1,
+  .photo-block-2 {
+    flex-wrap: wrap;
+  }
+  .photo-block-1 .photo-item,
+  .photo-block-2 .photo-item {
+    width: 90%;
+    height: 420px;
+  }
+}
+.photo-block-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.photo-block-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.photo-item {
+  width: 370px;
+  height: 420px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+.quote-block {
+  background-image: url(../img/block10bckgrnimg.png);
+  min-height: 500px;
+  background-size: cover;
+  text-align: center;
+  position: relative ;
+}
+.touch-block {
+  background-color: #ffffff;
+}
+.video-block {
+  background-image: url(../img/block8bcgrimg.png);
+  min-height: 500px;
+  background-size: cover;
+  text-align: center;
+}
+.video__icon {
+  margin-top: 216px;
+  margin-bottom: 210px;
+}
+@font-face {
+  font-family: "Amble Bold";
+  src: url('../fonts/Amble-Bold.woff');
+}
+@font-face {
+  font-family: "Amble Light";
+  src: url('../fonts/Amble-Light.woff');
+}
+@font-face {
+  font-family: "Amble Regular";
+  src: url('../fonts/Amble-Regular.woff');
+}
+@font-face {
+  font-family: "Avenir Light";
+  src: url('../fonts/Avenir-Light.woff');
+}
+@font-face {
+  font-family: "Big John";
+  src: url('../fonts/BigJohn.woff');
+}
+@font-face {
+  font-family: "Slim Joe";
+  src: url('../fonts/SlimJoe.woff');
+}
+.button {
+  display: block;
+  text-align: center;
+}
+.button:hover {
+  background-color: lightgray;
+  opacity: 0.8;
+  color: #e0921c;
+}
+.button__white {
+  position: absolute;
+  padding: 0px 80px 0px 100px;
+  top: 201px;
+  left: 0px;
+  border: 2px solid #ffffff;
+  text-decoration: none;
+  font-family: "Amble Bold";
+  font-size: 30px;
+  min-width: 180px;
+  color: #ffffff;
+  margin-left: 39%;
+  line-height: 98px;
+}
+.button__black {
+  text-decoration: none;
+  font-family: "Amble Bold";
+  font-size: 24px;
+  line-height: 60px;
+  color: black;
+  border: 2px solid black;
+  margin-left: 41%;
+}
+.our-works-button {
+  max-width: 370px;
+  height: 58px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.apply_button {
+  width: 178px;
+  height: 58px;
+  margin-left: 45px;
+  margin-right: 45px;
+  margin-top: 70px;
+  margin-bottom: 61px;
+}
+.send_button {
+  position: absolute;
+  top: 321px;
+  left: 270px;
+  width: 178px;
+  height: 58px;
+}
+.button__white {
+  position: absolute;
+  padding: 0px 80px 0px 100px;
+  top: 201px;
+  left: 0px;
+  border: 2px solid #ffffff;
+  text-decoration: none;
+  font-family: "Amble Bold";
+  font-size: 30px;
+  min-width: 180px;
+  color: #ffffff;
+  margin-left: 39%;
+  line-height: 98px;
+}
+.button__black {
+  text-decoration: none;
+  font-family: "Amble Bold";
+  font-size: 24px;
+  line-height: 60px;
+  color: black;
+  border: 2px solid black;
+  margin-left: 41%;
+}
+.caption {
+  font-family: "Big John";
+  font-size: 30px;
+  line-height: 60px;
+  text-align: center;
+  margin-top: 115px;
+  position: relative;
+}
+.caption::after {
+  position: absolute;
+  content: "";
+  margin-left: 48%;
+  margin-right: auto;
+  top: 0px;
+  left: 0px;
+  height: 2px;
+  min-width: 85px;
+  color: black;
+  background-color: black;
+  margin-top: 100px;
+}
+.text {
+  font-family: "Amble Light";
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 120px;
+}
+.captionfont {
+  font-family: "Big John";
+  font-size: 30px;
+  line-height: 60px;
+  text-align: center;
+}
+.textfont {
+  font-family: "Amble Light";
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
+}

@@ -19,11 +19,14 @@ module.exports = function(grunt) {
 
     browserSync: {
       bsFiles: {
-          src : 'casablanca/css/*.css'
+          src :[ 'casablanca/css/*.css',
+                  'casablanca/*.html'
+      ]
       },
       options: {
           server: {
-              baseDir: "./"
+              baseDir: "./",
+              
           }
       }
   },
