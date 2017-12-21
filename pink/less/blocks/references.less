@@ -1,0 +1,138 @@
+
+@media(min-width:280px){
+.main-content--references{
+    background-color:#ffffff;
+    text-align: center;
+}
+
+
+.references__name{
+    font-family: "Open Sans Bold";
+    font-size: 18px;
+    line-height: 30px;
+    padding-top:25px;
+    padding-left:8px;
+    margin-bottom: -2px;
+}
+
+.references__text{
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0px 13px 0px 20px;
+ 
+
+}
+.references--slider{
+    text-align: center;
+    padding-bottom: 45px;
+    margin-top:14px;
+    margin-right:5px;
+}
+.references--slider input[type="radio"]{
+    visibility: hidden;
+}
+
+
+.reference-button{
+    display: inline-block;
+    width:6px;
+    height: 6px;
+    background-color: #bec2c7;
+    border-radius: 100%;
+    margin-left:-11px;
+    &:hover{
+        background-color: #7e868f;
+    }
+    &:active{
+        border:3px solid black;
+        background-color:white;
+        width:6px;
+        height: 6px;
+    }
+}
+
+}
+
+@media(min-width:@tablet-width){
+    .main-content--reference{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+    .reference__name-description{
+        display:block;
+        font-family: "Open Sans";
+        font-size: 14px;
+        line-height: 30px;
+        order: 3;
+        margin-top:6px;
+        padding-left:6px;
+       
+    }
+    .references__name{
+        order:2;
+        margin-top:0px;
+        padding-top:15px;
+        font-size: 20px;
+    }
+    .references__text{
+        order: 1;
+       
+      
+        font-size: 18px;
+        margin-top:0px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right:10px;
+
+      
+      
+        
+    }
+
+
+}
+
+
+@media(min-width:@desktop-width){
+    .main-content--references{
+        position: relative;
+    }
+
+    .reference--quote__image{
+        display: block;
+        position: absolute;
+        top:78px;
+        left:47%;
+    }
+    .reference__name-description{
+        
+        font-size: 18px;
+        line-height: 30px;
+        order: 3;
+        margin-top:6px;
+        padding-bottom: 50px;
+    }
+    .references__name{
+        order:2;
+        margin-top:3px;
+        font-size: 24px;
+    }
+
+    .references__text{
+        order: 1;
+        padding-left:  218px;
+        padding-right: 220px;
+        font-size: 18px;
+        padding-top:185px;
+        
+    }
+   .references--slider {
+       display: none;
+
+    }
+
+
+}

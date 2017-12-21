@@ -1,0 +1,360 @@
+
+
+
+
+
+
+
+
+@media(min-width:0px){
+    .photo--content{
+        background-color: @color-white;
+        text-align: center;
+       
+        
+    }
+    
+    .main--photos--group .photo-container{
+
+        
+       
+        &:first-child{
+            margin-top:-19px;
+            & .photo--text__block{
+               
+             
+
+                transform: translate(0px,-10px);
+            }
+            & .like--container{
+                transform: translate(0px,-15px);
+            }
+         
+        }
+        &:nth-child(n+2){
+          
+            margin-top:-29px;
+            & .photo--text__block{
+                
+              
+ 
+                 transform: translate(0px,-10px);
+             }
+             & .like--container{
+                transform: translate(0px,-15px);
+            }
+        }
+
+        &:last-child .like--container{
+
+            padding-bottom: 1px;
+
+        }
+ 
+       
+    }
+
+    .panorama .like--container{
+        transform: translate(2px,-4px);
+    }
+    
+    .text__commentary{
+        .TextCommentary;
+    }
+    .text__name .name__bold{
+        font-family: "Open Sans Bold";
+        font-size: 14px;
+        text-transform: none;
+    }
+    
+    .text__name{
+    
+        font-family: "Open Sans";
+        font-size: 12px;
+        line-height: 24px;
+        text-transform: uppercase;
+         
+    }
+    
+    .like__count{
+    
+        font-family: "Open Sans";
+        font-size: 12px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color:#d85075;
+    
+    }
+    
+    .panorama{
+        box-sizing: border-box;
+    }
+
+.photo--content__caption{
+    .labelTextStyle;
+    text-transform: none;
+    padding-top:28px;
+    padding-bottom: 37px;
+    padding-left:11%;
+    padding-right: 8%;
+   
+   
+}
+
+.photo-container,.panorama{
+    background-color: #f2f2f2;
+    width:280px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+   
+}
+
+.photo-container{
+    margin-left:6%;
+    margin-right: 0;
+}
+
+
+.panorama__photo{
+   
+    width: 100%;
+    
+}
+
+.photo-container.panorama{
+    width:280px;
+    height: 195px;
+ }
+
+
+
+.posting__caption{
+ 
+    padding: 19px 18px 47px 22px;
+    line-height: 2.1em;
+}
+
+
+.like__count{
+    position: relative;
+}
+
+.like__count::before{
+    content: url(../img/icon-heart.svg);
+    position: absolute;
+    top:2px;
+    left:-31px;
+   
+}
+.photo--text__block:not(:first-child){
+   padding-top:23px;
+    padding-left: 18px;
+}
+
+.photo--text__block:first-child{
+    padding-top:20px;
+     padding-left: 21px;
+ }
+
+.like--container{
+    padding-left:50px;
+    padding-bottom: 25px;
+
+}
+.panorama{
+   margin-top:-5px;
+}
+
+
+
+}
+
+
+
+
+@media(min-width:@tablet-width){
+
+    .photo--content{
+        .flex-column;
+        align-items: center;
+    }
+    
+    .photo--content__caption {
+        padding: 74px 14% 58px 15%;
+        font-size: 18px;
+    }
+    .posting__caption{
+        font-size: 18px;
+    }
+ 
+    .panorama__photo{
+        
+         height: 508px;
+         
+     }
+     .main--photos--group .photo-container{
+        margin-top: 28px !important;
+        margin-left: 0px;
+        margin-bottom:10px;
+        flex-basis:300px;
+        height: 455px;
+
+        &:nth-of-type(odd){
+            margin-left: 29px;
+        }
+
+        &:nth-of-type(even){
+            margin-right: 21px;
+        }
+
+        &:nth-of-type(n+3){
+           transform: translateY(-18px);
+        }
+
+        &:nth-of-type(n+5){
+            transform: translateY(-18*2px);
+         }
+
+
+
+    }
+
+    .panorama{
+        min-width:620px;
+        height: 120px;
+        position: relative;
+        margin-top:-1px;
+        margin-left: 1%;
+        margin-right: 0;
+        
+     }
+
+    
+     
+     .panorama .like--container{
+         padding-left:50px;
+         padding-bottom: 25px;
+         position: absolute;
+         right: 55px;
+         top:13px;    
+     
+     }
+
+     .panorama .photo--text__block{
+
+        
+        padding-right: 80px;
+        padding-left: 25px;
+            
+     }
+
+    .main--photos--group{
+      
+        .flex-row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 690px;
+      
+    }
+
+    .main--photos--group .like--container{
+        
+        height: 55px;
+        padding-left:27px;
+        padding-top:14px;
+    
+    }
+
+
+   .photo--main-content .main--photos--group .photo-container .photo--text__block {
+       
+        transform: translate(10px,-5px);
+        height: 70px;
+        padding-right: 35px;
+    }
+
+    .main--photos--group .like__count::before{
+
+        position: absolute;
+ 
+        top:0px;
+       left:228px !important;
+    }
+
+    .panorama .like__count::before {
+        top: 2px;
+      
+        left: 108px !important;
+    }
+
+    .posting__caption{
+       
+        padding: 0 0 59px 6px;
+        line-height: 1.7em;
+    }
+
+    
+    }
+
+
+
+    @media(min-width:@desktop-width){
+        
+        .photo--content__caption{
+       
+          
+            padding-bottom: 69px;
+            padding-left:24%;
+            padding-right: 24%;
+    }
+
+    .photo--content .main--photos--group .photo-container{
+        
+          
+          height: 560px;
+          margin-bottom: 20px;
+          transform: translate(0,0);
+          margin-left:-2px;
+          margin-right: 0px;
+          
+         
+      }
+
+  
+    .panorama{
+       width:940px;
+       height: 95px;
+       margin-bottom: 17px;
+    }
+
+    
+    .panorama .photo--text__block{
+        
+                
+                padding-right: 0px;
+                padding-top: 19px;
+                padding-left: 21px;
+               
+                    
+             }
+
+    .photo--main-content .main--photos--group .photo-container .photo--text__block {
+               
+                transform: translate(10px,-4px);
+            
+    }         
+
+    .main--photos--group{
+        
+       width:960px;
+        
+      }
+    .posting__caption {
+        padding: 17px 0 58px 2px;
+        
+    } 
+  
+        
+}    

@@ -1,0 +1,189 @@
+@media(min-width:280px){
+
+
+.block--header__download{
+    text-align: center;
+  background-color: #1d2631;
+  
+}
+
+.download__button{
+    
+    display: inline-block;
+    border: 4px solid white;
+    .noDecoration;
+    color:white;
+    border-radius: 30px;
+    font-family: "Open Sans Bold";
+    font-size: 18px;
+    line-height: 18px;
+    padding:15px 31px 15px 41px ;
+    margin-top: 29px;
+   
+
+    &:hover{
+        color:rgba(210,40,86,1);
+        background-color: #ffffff;
+    }
+    &:active{
+        color:rgba(210,40,86,0.5);
+        background-color: #ffffff;
+        
+    }
+    
+}
+
+.block--download__icons{
+    display: flex;
+    justify-content: center;
+    margin-top:31px;
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+        
+    
+}
+
+.download__icon{
+    width:50px;
+    height: 60px;
+   
+    
+}
+
+.icon__apple{
+    background-image: url("../img/logo-apple.svg");
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    margin-bottom:10px;
+    margin-left:13px;
+}
+
+
+.icon__android{
+    background-image: url("../img/logo-android.svg");
+    background-repeat: no-repeat;
+    background-position: 70% 60%;
+    margin-left:24px;
+   
+  
+    
+}
+
+.icon__windows{
+    background-image: url("../img/logo-microsoft.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+    margin-left:30px;
+}
+
+
+.download__text{
+    display: inline-block;
+
+    color:white;
+    font-family: "Open Sans Light";
+    font-weight: normal;
+    font-size: 14px;
+    padding: 0px 0px 0px 8px;
+  
+}
+
+
+}
+
+@media(min-width:@tablet-width){
+    .menu--wrapper{
+        position: relative;
+        min-height: 650px;
+    }
+    .block--header__download{
+           position: absolute;
+           width: 300px;
+           height:430px;
+           top:170px;
+           left: 21px;
+           background-color: transparent;
+           
+    }
+    .download__caption{
+        display: block;
+        font-family: "Open Sans Light";
+        font-size: 40px;
+        font-weight: normal;
+        line-height: 1.2em;
+        color: white;
+        padding-left:50px;
+        padding-right:50px;
+    }
+    .download__button{
+        display: block;
+        margin-top: 30px;
+
+        padding:10px 31px 15px 35px ;
+
+    }
+    .icon__android{
+        opacity: 0.5;
+    }
+     .block--download__icons{
+        margin-top:35px;
+    }
+
+    .block--download__icons{
+       
+        margin-top:47px;
+        margin-left:5px;
+     
+            
+        
+    }
+
+    .download__text{
+        font-size: 18px;
+        padding: 0px ;
+        line-height: 1.6em;
+    }
+    
+
+}
+
+
+@media(min-width:@desktop-width){
+    .block--header__download{
+        top:180px;
+        left:130px;
+    }
+    .icon__android{
+        opacity: 1;
+    }
+    .download__caption{
+        font-size:48px;
+        padding-left:22px;
+        padding-right:22px;
+    }
+    .download__button{
+      margin-top:59px;
+      padding: 10px 3px 15px 10px;
+      font-size:22px;
+    }
+    .block--download__icons{
+        margin-top: 69px;
+    }
+    .download__text{
+        padding-top:23px;
+        line-height: 1.4em;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+

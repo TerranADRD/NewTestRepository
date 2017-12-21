@@ -1,0 +1,385 @@
+@media(min-width:280px){
+
+.main-content--price-table{
+    background-color: #f2f2f2;
+    position: relative;
+   
+}
+
+.grey-separator__table{
+    position: absolute;
+    top:-39px;
+    left:0;
+    width: 100%;
+    height: 40px;
+    
+}
+
+
+.price-table {
+
+ margin-left: auto;
+ margin-right: auto;
+  border: 1px solid #f2f2f2;
+  padding-top:85px;
+
+}
+
+
+.price-table td{
+    background-color: #ffffff;
+    width: 100px;
+    height: 45px;
+    vertical-align: middle;
+    border-radius: 3px;
+
+
+}
+.price-table th{
+
+    height: 95px;
+
+}
+
+.price-table th:not(.cell__empty){
+    background-color: #283645;
+    text-align: center;
+    
+    border-radius: 3px;
+}
+
+.option-name {
+    font-family: "Open Sans";
+    font-size: 14px;
+   padding-left: 5px;
+   color: #283645;
+}
+
+.fare-name{
+
+    font-family:"Open Sans";
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 30px;
+   
+}
+
+.fare-cost{
+
+    font-family:"Open Sans Light";
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 30px;
+    
+}
+.hit--container{
+    position: relative;
+    background-image:  url("../img/bg-hit.svg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 72px 65px;
+}
+
+.hit--container::before{
+   
+
+    position: absolute;
+    content: "Хит";
+    color: white;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    font-size: 14px;
+    transform:rotate(-45deg);
+    top:13px;
+    left:6px;
+    letter-spacing: 1px;   
+  
+}
+
+.green{
+    position: relative;
+}
+
+.green::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top:25%;
+    left: 50%;
+
+    width:12px;
+    height: 28px;
+    border:3px solid #3dc644;
+    border-left: none;
+    border-top: none;
+    transform: rotate(45deg);
+}
+
+
+
+.red{
+    position: relative;
+}
+
+.red::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top:25%;
+    left: 50%;
+
+    width:4px;
+    height: 35px;
+    background-color: #f25b26;
+    transform: rotate(45deg);
+}
+.red::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top:25%;
+    left: 50%;
+
+    width:4px;
+    height: 35px;
+    background-color: #f25b26;
+    transform: rotate(-45deg);
+}
+
+
+
+
+.price--slider input[type="radio"]{
+    visibility: hidden;
+}
+
+
+.price-button{
+    display: inline-block;
+    width:6px;
+    height: 6px;
+    background-color: #bec2c7;
+    border-radius: 100%;
+    margin-left:-11px;
+    &:hover{
+        background-color: #7e868f;
+    }
+    &:active{
+        border:3px solid black;
+        background-color:white;
+        width:6px;
+        height: 6px;
+    }
+}
+
+}
+
+@media(min-width:279px) and (max-width:659px){
+
+    .price--slider{
+       text-align: center;
+       padding-top:26px;
+       padding-bottom: 48px;
+    }
+    .column-1,.column-2,.column-3{
+       display: none;
+    }
+    .cell__empty{
+       display: none;
+    }
+    .price-table .option-name{
+        width:257px;
+        margin-top: 4px;
+      
+    }
+    .price-table{
+            min-width: 820px;
+            margin-left:-262px;
+            padding-left:20px;
+            font-size: 14px;
+            text-transform:uppercase;
+              
+    }
+
+  
+    .green::before{
+        top:15%;
+        left: 85%;
+    }
+
+    .red::before{
+
+        top:12%;
+        left: 87%;
+
+
+    }
+    .red::after{
+
+        top:12%;
+        left: 87%;
+
+    }
+  
+    .price-table td{
+        height: 58px;
+      vertical-align: middle;
+    }
+    .fare-name{
+        
+           
+            font-size: 18px;
+            line-height: 1.5em;
+            padding-right: 5px;
+           
+           
+        }
+        
+        .fare-cost{
+        
+           
+            font-size: 24px;
+            line-height: 1.5em;
+            padding-right: 3px;
+           
+            
+        }
+
+}
+
+    
+@media(min-width:@tablet-width){
+
+    .price-table {
+        min-width: 620px;
+        padding-bottom: 68px;
+       
+       
+    }
+    .price--slider{
+        display: none;
+    }
+    .price-table .only-mobile--cell{
+        display: none;
+    }
+
+    .price-table  .red.only-mobile::before{
+
+        visibility: hidden;
+       
+    }
+
+    .price-table  .red.only-mobile::after{
+        
+                visibility: hidden;
+               
+            }
+.price-table  .green.only-mobile::before{
+                
+            visibility: hidden;
+                       
+    }   
+    
+    .price-table {
+        
+    
+          padding-top:58px;
+         // margin-top:300px;
+        
+        }
+        .price-table th{
+          height:79px;
+          width:135px;    
+          
+        }
+        .price-table td{
+            height:42px; 
+  
+          }
+
+            
+            .fare-cost, .fare-name{
+            
+               
+             
+               padding-left:8px;
+               line-height: 28px;
+
+               
+                
+            }
+
+            .option-name{
+                line-height: 42px;
+                vertical-align: middle;
+                padding-left:15px;
+            }
+            .green::before{
+                left:49%;
+                top:0;
+            }
+
+            .red::after, .red::before{
+                top:6%;
+                left: 52%;
+            }
+          
+  
+
+}
+
+
+@media(min-width:@desktop-width){
+    .price-table {
+        min-width: 940px;
+        padding-bottom: 98px;
+        margin-top:60px;
+    }
+
+    .price-table td{
+        width:235px;
+        height: 60px;
+    }
+
+    .price-table th{
+        height:97px;
+    }
+
+    .price-table .only-mobile--cell{
+        display: none;
+    }
+    .option-name{
+        font-size:18px;
+        padding-left:23px;
+    }
+    .price-table td{
+        height:55px;
+        width:232px;
+    }
+
+    .fare-cost, .fare-name{
+        font-size: 18px;
+        line-height: 1.6em;
+       
+
+    }
+
+
+    .fare-cost{
+        font-size: 20px;
+        margin-bottom: 2px;
+        margin-top:3px;
+    }
+
+    .green::before{
+        left:47%;
+        top:12%;
+    }
+    .red::after, .red::before {
+        top: 20%;
+        left: 49%;
+    }
+
+
+}

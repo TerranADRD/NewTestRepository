@@ -1,0 +1,250 @@
+//настройка под деск
+
+@media(min-width:@desktop-width){
+    
+        .form{
+    
+            .flex-row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 940px;
+            
+        }
+    
+        .name--container{
+            width: 435px;
+           .flex-column;
+            justify-content: flex-start;  
+            height: 295px;
+          
+        }
+    
+        .name--container span{
+            padding-bottom: 42px;   
+           
+        }
+
+        .name--container label{
+            padding-right: 10px;
+        }
+
+        form .app-types--container legend{
+            padding-top: 16px;
+            padding-left: 18px;
+
+            padding:16px 20px 17px 18px;
+        }
+       
+    
+    
+        .app-types--wrapper{
+    
+            width: 435px;
+            margin-left:70px;
+           
+        }
+       
+        .app-types--container div{
+            margin-left:72px;
+            justify-content: space-around;
+             
+        }
+
+        .app-types--wrapper div{
+          justify-content: flex-start;
+        }
+
+        .app-types--container div:first-of-type{
+            margin-top: 27px;
+        }
+    
+        .app-types--container div:last-child{
+            margin-bottom: 30px;
+        }
+    
+     
+        .contacts--wrapper{
+           
+            .flex-row;
+            justify-content: center;
+           
+        }
+
+        .contacts--wrapper fieldset{
+            height: 172px;
+        }
+    
+        .contacts--container {
+    
+             display: flex;
+             flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            width:940px;
+            box-sizing: border-box;
+           
+        }
+
+        .contacts--container legend{
+            margin-top:-6px;
+           
+        }
+    
+        .form input[type="tel"],[type="email"]{
+            width:377px !important;
+            margin-top: 0px !important;
+           
+        }
+
+        .form input[type="tel"]{
+
+            margin-left:0px;
+
+        }
+
+        .form input[type="email"]{
+            margin-left:-26px;
+        }
+    
+    
+        .achievement--wrapper fieldset {
+            .flex-row;
+            flex-wrap: wrap;
+            justify-content: center;
+          
+            width: 920px;
+          
+           
+        }
+
+        .achievements--container div:first-of-type{
+            margin-top:0px;
+        }
+
+        .achievements--container div {
+
+            &:first-of-type{
+
+                     transform: translateX(20px);
+
+            }
+            &:nth-of-type(4){
+                transform: translateX(20px);
+            }
+
+            &:nth-of-type(2){
+                transform: translateX(56px);
+            }
+            &:nth-of-type(5){
+                transform: translateX(56px);
+            }
+
+
+            &:nth-of-type(3){
+                transform: translateX(80px);
+            }
+            &:nth-of-type(6){
+                transform: translateX(80px);
+            }
+
+            
+           
+        }
+    
+       
+
+        .achievement--wrapper div{
+    
+           .flex-row;
+          flex-basis: 280px;
+            margin-left:0;
+        }
+    
+        .comment--wrapper fieldset{
+            width:920px;
+            height: 235px;
+            
+        }
+    
+        .comment-field{
+            width:815px;
+            height:130px;
+            padding-top:15px;
+            padding-left: 10px;
+            box-sizing: border-box;
+            text-align: left;
+        }
+    
+        .phone--label::after{
+    
+            right:-215px;
+    
+        }
+    
+        .email--label::after{
+    
+            right:-245px;
+            
+                    
+     }
+    
+     .contacts--wrapper div{
+         .flex-column;
+    
+        &:first-of-type{
+         margin-top: 0px; 
+         margin-bottom: 0px;
+        }
+        &:last-of-type{
+          
+         margin-bottom: 0px;
+        }
+    
+     }
+    
+     .button--wrapper{
+        width:920px;
+       .flex-row;
+        justify-content: space-between;
+       
+    
+     }
+     
+     .comment--wrapper{
+    
+        margin-bottom: 0px;
+    }
+
+    form .comment-container legend {
+        padding: 25px 48px 22px 48px;
+         
+    }
+    
+    .contacts--container div label{
+        padding-left:19px;
+        padding-top:10px;
+
+        transform: translateX(-3px);
+    }
+
+    form .achievements--container legend {
+        padding: 36px 27px 40px 25px;
+       
+    }
+    
+    .contacts--container div {
+        
+        padding-top:23px;
+    }
+    .form--submit__button {
+        
+        margin-top: 65px;
+        transform: translateX(-18px);
+    }
+    .mandatory__fields {
+        margin-right: 125px;
+        margin-top: 63px;
+    }
+    }
+    

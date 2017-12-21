@@ -1,0 +1,51 @@
+
+
+    .header--logo:hover  path{
+        fill: #d22856;
+    }
+
+    .header--logo:active  path{
+        fill: #ffffff;
+        opacity: 0.3;
+    }
+
+@media (min-width:0px)and(max-width:@tablet-width) {
+
+    .header--logo__tablet,.header--logo__desktop{
+        display:none;
+    
+    }
+    .header--logo__mobile{
+        padding:0px 0px 0px 10px;
+       
+    }
+}
+
+@media (min-width: @tablet-width ) and (max-width:@desktop-width) {
+    
+        .header--logo__mobile,.header--logo__desktop{
+            display:none;
+        
+        }
+        .header--logo__tablet{
+
+            padding:0px 10px 0px 10px;
+
+        }
+    }
+    
+
+    @media (min-width:@desktop-width) {
+        
+            .header--logo__mobile,.header--logo__tablet{
+                display:none;
+            
+            }
+            .header--logo__desktop{
+                margin-left: 120px;
+            } 
+          
+        }   
+
+
+

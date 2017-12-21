@@ -1,0 +1,273 @@
+@media(min-width:@tablet-width) {
+    .form--container{
+          .flex-column;
+           align-items: center;
+    }
+
+    .form  {
+        .flex-column;
+        width:@tablet-content-width;
+                 
+    }
+
+ 
+    .form input[type="text"]{
+        width:100%;
+    }
+
+
+
+
+    .form input[type="email"],[type="tel"]{
+        
+        width:500px;
+        box-sizing: border-box;
+        height: 60px;
+        margin-top:9px;
+        }
+
+        .form input[type="email"]{
+            margin-top:4px;
+        }    
+
+    .name--container span{
+
+         .flex-row;
+          flex-wrap: nowrap;
+          align-items: flex-start;
+          width:100%;
+         
+              
+    }
+
+    .name--container span:first-of-type{
+
+        padding-bottom: 50px;
+
+    }
+    .name--container span:nth-of-type(2){
+        
+                padding-bottom: 47px;
+        
+    }
+
+    .name--container{
+        .flex-column;
+        align-items: flex-start;
+        order:1;
+
+        
+    }
+    .name--container label{
+
+        padding-right: 17px;
+       
+    }
+
+
+    .achievement--wrapper{
+
+       .flex-row;
+       justify-content:center;
+        background-color: @color-white;
+        order: 4;
+        margin-bottom: 25px;
+       
+       
+    }
+
+    .achievement--wrapper div{
+        margin-left: 60px;
+    }
+
+    .achievements--container{
+       
+       .flex-column;
+        flex-wrap: wrap;
+        border: none;
+    
+    }
+    .achievements--container div{
+        margin-bottom: 44px;
+       
+    }
+
+    .achievements--container div:first-of-type{
+        margin-top:6px;
+    }
+
+    .achievements--container label::before{
+
+        margin-left: -10px;
+        margin-right: 20px;
+    }
+
+
+    .achievement--wrapper fieldset{
+        
+        width:@tablet-content-width;
+
+             
+    }
+
+     .app-types--wrapper fieldset {
+
+      
+        height: 310px;
+        
+    }
+
+    .app-types--wrapper{
+        
+             background-color: @color-white;
+            .flex-row;
+             justify-content: center;
+             order: 2;
+             margin-bottom: 50px;
+             margin-top:33px;
+            
+       }
+
+       .app-types--wrapper div{
+           margin-left: 60px;
+       }
+
+       .app-types--wrapper div:first-of-type{
+        margin-top: 20px;
+    }
+
+    .app-types--wrapper div:last-of-type{
+        margin-bottom: 30px;
+    }
+
+
+       .app-types--wrapper fieldset,.achievement--wrapper fieldset{
+
+        background-color: @color-white;
+        border: 2px solid  #e5e5e5;
+        width:@tablet-content-width;
+
+       }
+       .app-types--container div label::before {
+        margin-left: -10px;
+        margin-right: 21px;
+    }  
+
+    .app-types--container div:first-of-type{
+        margin-top:9px;
+       
+    }
+
+       .contacts--wrapper{
+           order: 3;
+           margin-bottom: 20px;
+       }
+       .contacts--wrapper fieldset,.comment--wrapper fieldset{
+       
+        border: 2px solid  #e5e5e5;
+
+       }
+
+       .contacts--wrapper fieldset{
+           height: 303px;
+       }
+       .contacts--wrapper div{
+
+       &:first-of-type{
+        margin-top: 19px; 
+        margin-bottom: 28px;
+       }
+       &:last-of-type{
+         
+        margin-bottom: 35px;
+       }
+
+    }
+    .contacts--container div label{
+        padding-left:70px;
+        padding-top:10px;
+    }
+
+       .contacts--container div{
+         .flex-column;
+       }
+
+       .contacts--container div label{
+           order: 1;
+       }
+       .comment--wrapper{
+           order: 5;
+           margin-bottom: 25px;
+       }
+    .comment--wrapper fieldset{
+
+        width:@tablet-content-width;
+        height: 305px;
+     
+}
+form .comment-container legend{
+    padding-bottom: 20px;
+    padding-top: 18px;
+   
+}
+
+    .comment-field{
+        width:500px;
+        height:175px;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .button--wrapper{
+        order: 6;
+        display: inline-flex;
+        justify-content: center;
+         align-items: center;
+         width: 630px;
+     
+    }
+    .form--submit__button{
+        width:300px;
+        margin-top: 41px;
+        transform: translateX(-7px);
+       
+    }
+
+    .mandatory__fields{
+        margin-left: 126px;
+        margin-top:38px;
+    }
+
+  
+
+    .phone--label,.email--label{
+        position: relative;
+
+    }
+    .phone--label::after{ 
+        background-image: url('../img/icon-phone.svg');
+        top:-64px;
+        right: -356.5px;
+    }
+
+    .email--label::after{
+        background-image: url('../img/icon-mail.svg');
+        top:-64px;
+        right: -387px;
+    }
+
+.email--label::after,.phone--label::after{
+    content: '';
+    width: 62px;
+    height: 62px;
+    color: #e5e5e5;
+    display: block;
+    position: absolute;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-color: #e5e5e5;
+
+}
+
+ 
+}
